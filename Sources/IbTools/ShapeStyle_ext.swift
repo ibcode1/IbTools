@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+/// This extension is in place to allow custom made colors to be used on the `ShapeStyle` protocol
 public extension ShapeStyle where Self == Color {
+  /// This is the `orangePrimary` color 
   static var orangePrimary: Color {
     Color(.orangePrimary)
   }
