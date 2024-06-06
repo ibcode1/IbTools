@@ -19,7 +19,14 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "IbTools"),
+            name: "IbTools", 
+            resources: [
+              .process("Assets/Fonts/Lexend-ExtraBold.ttf"),
+              .process("Assets/Fonts/Lexend-Light.ttf"),
+              .process("Assets/Fonts/Lexend-Regular.ttf"),
+              .process("Assets/Fonts/Lexend-SemiBold.ttf")
+            ]
+        ),
         .testTarget(
             name: "IbToolsTests",
             dependencies: ["IbTools"]),
