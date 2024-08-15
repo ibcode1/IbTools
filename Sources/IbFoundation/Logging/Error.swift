@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum DecodingConfigurationError: Error {
+public enum DecodingConfigurationError: Error {
   case missingManagedObjectContext
 }
