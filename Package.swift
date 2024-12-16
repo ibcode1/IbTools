@@ -30,12 +30,7 @@ let package = Package(
     .target(
       name: "IbTools",
       dependencies: ["IbFoundation"],
-      resources: [
-        .process("Assets/Fonts/Lexend-ExtraBold.ttf"),
-        .process("Assets/Fonts/Lexend-Light.ttf"),
-        .process("Assets/Fonts/Lexend-Regular.ttf"),
-        .process("Assets/Fonts/Lexend-SemiBold.ttf")
-      ]
+      resources: [.process("Resources")]
     ),
     .testTarget(
       name: "IbToolsTests",
