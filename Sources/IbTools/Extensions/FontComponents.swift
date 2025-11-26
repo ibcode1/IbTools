@@ -13,7 +13,7 @@ public struct FontComponents {
     public let size: CGFloat
     public let relativeTo: Font.TextStyle
 
-    public init(
+    public init(  //why init this struct?
         fontName: IbFontName,
         size: CGFloat,
         relativeTo: Font.TextStyle

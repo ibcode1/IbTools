@@ -51,7 +51,7 @@ public final class URLBuilder: URLBuilding {
             headers = [:]
         }
 
-        headers?[value] = field
+        headers?[field] = value
 
         return self
     }
